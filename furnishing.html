@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Furnishings</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">Eventify</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="consultation.html">Consultation</a></li>
+            <li class="active"><a href="furnishing.html">Furnishings</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-bars" style="color: #004F47;"></i></div>
+    </nav>
+
+
+
+    <section class="furnishings-section">
+        <h2>Furnishings Catalog</h2>
+
+        <!-- Product 1 -->
+        <div class="product">
+            <img src="./photos/living-room-930804_1280.jpg" alt="Product 1">
+            <h3>Modern Living Room Set</h3>
+            <p class="description">Create a stylish and comfortable living space with this modern set.</p>
+            <p class="price">$999.99</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Modern Living Room Set', 999.99)">Add to Cart</button>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product">
+            <img src="./photos/bedroom-416062_1280.jpg" alt="Product 2">
+            <h3>Cozy Bedroom Collection</h3>
+            <p class="description">Transform your bedroom into a cozy retreat with this collection.</p>
+            <p class="price">$799.99</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Cozy Bedroom Collection', 799.99)">Add to Cart</button>
+        </div>
+
+
+        <!-- Product 3 -->
+        <div class="product">
+            <img src="./photos/444.jpg" class="imgp" alt="Product 3">
+            <h3>Colorful Curtains</h3>
+            <p class="description"> The choice of curtains can significantly impact the overall atmosphere of a room.
+                <br>
+                Feel free to mix and match colors and patterns until you find a combination that suits your taste and
+                complements your home decor.</p>
+            <p class="price">$109.99</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Colorful Curtains', 109.99)">Add to Cart</button>
+        </div>
+    </section>
+
+    <button class="view-cart-btn" onclick="viewCart()">View Cart</button>
+
+
+    <!-- Cart modal -->
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-modal-content">
+            <span class="close" onclick="closeCartModal()">&times;</span>
+            <h2>Your Shopping Cart</h2>
+            <div id="cartItems"></div>
+            <p>Total: $<span id="cartTotal">0.00</span></p>
+        </div>
+    </div>
+
+
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" class="social-icon">Facebook</a><i class="fa-brands fa-facebook"></i>
+                <a href="#" class="social-icon">Twitter</a><i class="fa-brands fa-twitter"></i>
+                <a href="#" class="social-icon">Instagram</a><i class="fa-brands fa-instagram"></i>
+            </div>
+            <ul class="footer-links">
+                <li><a href="#terms">Terms of Service</a></li>
+                <li><a href="#privacy">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <h5> <i class="fa-regular fa-copyright"></i>
+            Created by <span>Daisy Designs</span> | All Rights Reserved </h5>
+    </footer>
+
+
+
+
+    <script>
+        // Cart data
+        var cart = [];
+
+        // Get the cart modal
+        var cartModal = document.getElementById("cartModal");
+
+        // Open the cart modal
+        function viewCart() {
+            updateCartModal();
+            cartModal.style.display = "block";
+        }
+
+        // Close the cart modal
+        function closeCartModal() {
+            cartModal.style.display = "none";
+        }
+
+        // Close the cart modal if the user clicks outside of it
+        window.onclick = function (event) {
+            if (event.target == cartModal) {
+                cartModal.style.display = "none";
+            }
+        }
+
+        // Add to Cart function
+        function addToCart(productName, price) {
+            // Add item to cart
+            cart.push({ name: productName, price: price });
+
+            // Display alert (you can customize this)
+            alert("Item added to cart!");
+
+            // Update cart modal
+            updateCartModal();
+        }
+
+        // Update cart modal content
+        function updateCartModal() {
+            var cartItemsDiv = document.getElementById("cartItems");
+            var cartTotalSpan = document.getElementById("cartTotal");
+
+            // Clear existing content
+            cartItemsDiv.innerHTML = "";
+
+            // Update cart items
+            cart.forEach(function (item) {
+                var itemDiv = document.createElement("div");
+                itemDiv.innerHTML = `<p>${item.name} - $${item.price.toFixed(2)}</p>`;
+                cartItemsDiv.appendChild(itemDiv);
+            });
+
+            // Update cart total
+            var total = cart.reduce(function (sum, item) {
+                return sum + item.price;
+            }, 0);
+            cartTotalSpan.textContent = total.toFixed(2);
+        }
+    </script>
+
+
+
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/25ad4c3d5b.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

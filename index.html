@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Planner</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <header>
+
+
+        <nav>
+            <div class="logo"><img src="./photos/esperanto-151905_1280-removebg-preview.png" alt=""></div>
+            <form class="example" action="action_page.php">
+                <!-- <input class="example" type="text" placeholder="Search.." name="search"> -->
+                <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
+            </form>
+            <ul class="nav-links">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="consultation.html">Consultation</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Services</a>
+                    <div class="dropdown-content">
+                        <a href="furnishing.html">Furnishings</a>
+                        <a href="repairs.html">Repairs</a>
+                        <a href="shopping.html">Shopping Assistance</a>
+                        <a href="appliance.html">Appliance Mounting</a>
+
+                    </div>
+                </li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-bars" style="color:rgb(117, 62, 37);"></i></div>
+
+
+
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to Eventify</h1>
+            <p>Your premier event planners for unforgettable experiences.</p>
+            <a href="#contact" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <h2>Our Services</h2>
+        <div class="services-gallery">
+            <div class="service-item">
+                <img src="./photos/kitchen-1940174_1280.jpg" alt="Service 1">
+                <div class="service-details">
+                    <h3>Repairs</h3>
+                    <p>Transform your space with Emeralds Interior. Our skilled team <br>
+                        excels in precise tile installations, enhancing both style and functionality. <br>
+                        Elevate your surroundings with our expert craftsmanship. <br>
+
+                        Upgrade your kitchen with Emeralds Interior. <br>
+                        Explore our range of fridge installations, <br>
+                        where functionality meets style. Our expert team ensures a seamless fit, <br>
+                        turning your kitchen into a modern and efficient space.</p>
+                </div>
+            </div>
+            <div class="service-item">
+                <img src="./photos/bookcase-3532957_1280.jpg" alt="Service 2">
+                <div class="service-details">
+                    <h3>Furnishing</h3>
+                    <p> Discover the art of home furnishings with Emeralds Interior. <br>
+                        From stylish furniture to curated decor, we offer a range <br>
+                        that blends comfort and aesthetics seamlessly. Explore <br>
+                        our collection to transform your living spaces into personalized <br>
+                        havens of elegance and functionality.</p>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <img src="./photos/living-room-4488900_1280.jpg" alt="Service 2">
+                <div class="service-details">
+                    <h3>Appliance Mounting</h3>
+                    <p>In Emerald's fancy home, putting up a TV is like creating <br>
+                        a cool masterpiece. The flat screen looks awesome on the <br>
+                        gray-themed wall, and all the messy wires are hidden away. <br>
+                        They make sure the TV is stuck up there just right, making <br>
+                        the fancy place look even better.
+                    </p>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <img src="./photos/bookcase-3532945_1280.jpg" alt="Service 2">
+                <div class="service-details">
+                    <h3>Custom floral arrangements</h3>
+                    <p>Bring beauty home with us <br>
+                        We create custom floral arrangements tailored to your style. <br>
+                        Let our team add a touch of nature to your space, crafting unique <br>
+                        designs exclusively for you.
+                    </p>
+                </div>
+            </div>
+            <div class="service-item">
+                <img src="./photos/bookcase-3532945_1280.jpg" alt="Service 2">
+                <div class="service-details">
+                    <h3>Events Planning</h3>
+                    <p>From small gatherings to corporate events, <br>
+                        we plan it all with our top-notch event planning services. <br>
+                        We’ll ensure that every detail is taken care of .<br>
+
+                        Trust us to handle the planning, <br>
+                        so you can focus on enjoying the moment.<br>
+                    </p>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <img src="./photos/bedroom-1158264_1280.jpg" alt="Service 2">
+                <div class="service-details">
+                    <h3>Consultation</h3>
+                    <p>Emerald's Interior Design Consultation offers personalized expertise <br>
+                        to enhance your space. Our experienced designers craft tailored solutions, <br>
+                        blending style with functionality. From color palettes to furniture selection, <br>
+                        we guide you through the process, ensuring a harmonious and aesthetically <br>
+                        pleasing home or office environment. Elevate your surroundings <br>
+                        with Emerald's refined design sensibilities. <br>
+                    </p>
+                </div>
+            </div>
+            <div class="service-item">
+                <img src="./photos/IMG-20231120-WA0009.jpg" alt="Service 2">
+                <div class="service-details">
+                    <h3>Curtains </h3>
+                    <p>Whether it's mounting your TV, installing shelves, curtains or securing heavy fixtures, <br>
+                        Emerald Interiors provides professional installation services. Our team ensures that every <br>
+                        installation is precise, safe, and enhances the overall design of your space. <br>
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="service-item">
+                <img src="./photos/living-room-930804_1280.jpg" alt="Service 2">
+                <div class="service-details">
+                    <h3>Home Furnishing</h3>
+                    <p> Elevate your home with Emeralds Interior's appliance mounting <br>
+                        expertise. Whether it's TVs, microwaves, or other devices, <br>
+                        our skilled team ensures secure and aesthetically pleasing installations. <br>
+                        Trust us to seamlessly integrate technology into your space for a modern <br>
+                        and polished look."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="blog" class="blog-section">
+        <h2>Latest Blog Posts</h2>
+
+        <!-- Blog Post 1 -->
+        <div class="blog-card">
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="/photos/111.jpg" style="width:50%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="/photos/222.jpg" style="width:50%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="/photos/333.jpg" style="width:50%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="/photos/444.jpg" style="width:50%">
+            
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="/photos/555.jpg" style="width:50%">
+                    
+                </div>
+
+            </div>
+            <br>
+
+            <div class="dot1" style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <h3>Draping Elegance: A Guide to Choosing Perfect Living Room Curtains</h3>
+            <h4>The living room is the heart of any home—a space where family gathers, and memories are made. One often
+                overlooked,
+                yet crucial, element in creating a cozy and stylish living room is the choice of curtains. The right
+                curtains can
+                transform a space, adding warmth, character, and a touch of sophistication. Here&#39;s a guide to help
+                you pick
+                the perfect living room curtains:</h4>
+            <button onclick="toggleReadMore('blogPost1', 'readMoreBtn1', 'readLessBtn1')" id="readMoreBtn1">Read
+                more</button>
+            <button onclick="toggleReadMore('blogPost1', 'readMoreBtn1', 'readLessBtn1')" id="readLessBtn1"
+                style="display:none">Read less</button>
+            <p id="blogPost1" class="blog-content" style="display: none;">
+                1. Consider the Mood:
+                Before diving into patterns and fabrics, think about the mood you want to create in your living room.
+                Are you aiming for a relaxed, casual vibe or a more formal, elegant feel? The mood will influence your
+                curtain choices. <br>
+
+                2. Light and Privacy:
+                Assess the amount of natural light your living room receives and the level of privacy you desire. Sheer
+                curtains allow soft light to filter through, creating an airy feel, while heavier fabrics provide more
+                privacy
+                and can block out light when needed. <br>
+
+                3. Choose the Right Fabric:
+                Selecting the right fabric is crucial. Light, breezy fabrics like linen or cotton are ideal for a casual
+                look,
+                while velvet or silk adds a touch of luxury for a more formal setting. Consider the season too; thicker
+                fabrics for winter and lighter ones for summer. <br>
+
+                4. Match or Contrast:
+                Decide whether you want your curtains to blend in with the wall color for a seamless look or contrast
+                for
+                a bold statement. Matching colors can create a serene ambiance, while contrasting shades add visual
+                interest. <br>
+
+                5. Pattern Play:
+                If your living room is filled with solid colors, consider introducing patterns through your curtains.
+                Stripes,
+                florals, or geometric designs can breathe life into the space, but be mindful of not overwhelming the
+                room. <br>
+
+                6. Length and Width:
+                Curtain length and width play a crucial role in the overall aesthetic. For a classic look, let your
+                curtains
+                puddle slightly on the floor. For a more contemporary feel, opt for curtains that just skim the floor or
+                hover a few inches above. <br>
+
+                7. Layering with Sheers:
+                Add depth and dimension by layering sheer curtains underneath heavier drapes. This not only enhances
+                the visual appeal but also gives you flexibility in adjusting light levels throughout the day.
+                <br>
+                8. Hardware Matters:
+                Pay attention to curtain rods and finials. Choose a style that complements your overall design theme,
+                whether it&#39;s sleek and modern or ornate and traditional. <br>
+
+                9. Test Samples:
+                Before making a final decision, get fabric samples and hang them in your living room to see how they
+                interact with the natural light and other elements in the space. This can help you make an informed
+                decision. <br>
+                10. Maintenance Considerations:
+                Think about practicality. If your living room is a high-traffic area, consider machine-washable fabrics.
+                Dust-resistant materials can also be a game-changer for low-maintenance elegance. <br> <br>
+
+                Choosing the perfect living room curtains is about finding the balance between functionality and
+                aesthetics. Let your personality shine through in your choices, and don&#39;t be afraid to experiment
+                with
+                different textures and styles. After all, the right curtains can be the final flourish that turns your
+                living
+                room into a true sanctuary.
+            </p>
+        </div>
+
+        <!-- Blog Post 2 -->
+        <div class="blog-card">
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="./photos/11.jpg" style="width:50%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="./photos/22.jpg" style="width:50%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="./photos/33.jpg" style="width:50%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="./photos/44.jpg" style="width:50%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="./photos/55.jpg" style="width:50%">
+                </div>
+
+            </div>
+            <br>
+
+            <div class="dot1" style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <h3>Choosing the Best Balloon and Flower Bouquets for Your Birthday</h3>
+            <h4>Birthdays are a celebration of life, and what better way to mark the occasion than with the timeless
+                charm of balloons and the vibrant beauty of flowers? Whether you&#39;re throwing a party or surprising a
+                loved one, the perfect balloon and flower combination can elevate the birthday spirit. Here&#39;s a
+                guide to help you choose the best balloon and flower bouquets for that special day:</h4>
+            <button onclick="toggleReadMore('blogPost2', 'readMoreBtn2', 'readLessBtn2')" id="readMoreBtn2">Read
+                more</button>
+            <button onclick="toggleReadMore('blogPost2', 'readMoreBtn2', 'readLessBtn2')" id="readLessBtn2"
+                style="display:none">Read less</button>
+            <p id="blogPost2" class="blog-content" style="display: none;">
+                1. The Classic Elegance of Mixed Blooms and Helium Wonders:
+                Blend the timeless beauty of a mixed flower bouquet with the playful elegance of helium balloons.
+                Consider a combination of roses, lilies, and daisies paired with helium-filled mylar balloons in
+                birthday-
+                themed shapes like stars, hearts, or even numbers. <br>
+
+                2. Color Coordinated Bliss:
+                Create a visually stunning impact by coordinating the colors of your balloons and flowers. Whether
+                it&#39;s a
+                monochromatic scheme or a harmonious blend of complementary hues, a coordinated color palette
+                adds a touch of sophistication to the celebration. <br>
+
+                3. Ageless Charm with Numbered Balloons:
+                Spell out the birthday age with oversized numbered balloons. Combine these with a bouquet of flowers
+                in corresponding shades for a personalized and ageless arrangement. It&#39;s a simple yet effective way
+                to
+                make the birthday person feel truly special. <br>
+
+                4. Whimsical Garden Fantasy:
+                Bring the charm of the garden indoors with a whimsical bouquet of wildflowers and an assortment of
+                pastel-hued balloons. Think about incorporating butterflies or other nature-inspired balloon shapes for
+                an enchanting touch. <br>
+
+                5. The Extravaganza of Giant Confetti Balloons:
+                Make a bold statement with giant confetti-filled balloons. Pair these show-stoppers with a bouquet of
+                bright, bold blooms like sunflowers or gerbera daisies for a celebratory explosion of color. <br>
+
+                6. Sophistication in Simplicity:
+                Sometimes, less is more. Opt for a minimalist arrangement with a simple bouquet of elegant flowers like
+                orchids or calla lilies, paired with a small cluster of helium balloons in muted tones. It's a refined
+                choice
+                that exudes sophistication. <br>
+
+                7. Tropical Paradise Fusion:
+                For a birthday with a tropical theme, consider a bouquet of exotic flowers like orchids, hibiscus, and
+                birds of paradise. Complement this with vibrant, palm-shaped balloons to transport the celebration to a
+                paradise island. <br>
+
+                8. Rustic Chic with Wildflower Bouquets and Burlap Balloons:
+                Embrace a rustic theme with a bouquet of wildflowers wrapped in burlap, accompanied by helium
+                balloons adorned with rustic-inspired designs. This combination is perfect for a cozy and down-to-earth
+                birthday celebration. <br>
+                Remember, the best balloon and flower bouquets are those that reflect the personality and preferences
+                of the birthday person. Whether you choose a grand display or a subtle arrangement, the thoughtful
+                combination of balloons and flowers is sure to add a touch of magic to the birthday celebration. Cheers
+                to another year of joy, love, and unforgettable moments! 8. Rustic Chic with Wildflower Bouquets and
+                Burlap Balloons:
+                Embrace a rustic theme with a bouquet of wildflowers wrapped in burlap, accompanied by helium
+                balloons adorned with rustic-inspired designs. This combination is perfect for a cozy and down-to-earth
+                birthday celebration. <br> <br>
+                Remember, the best balloon and flower bouquets are those that reflect the personality and preferences
+                of the birthday person. Whether you choose a grand display or a subtle arrangement, the thoughtful
+                combination of balloons and flowers is sure to add a touch of magic to the birthday celebration. Cheers
+                to another year of joy, love, and unforgettable moments!
+            </p>
+        </div>
+
+        <!-- Blog Post 3-->
+        <div class="blog-card">
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="./photos/1.jpg" style="width:30%" height="400px">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="./photos/2.jpg" style="width:30%" height="400px">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="./photos/3.jpg" style="width:30%" height="400px">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="./photos/4.jpg" style="width:30%" height="400px">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="./photos/5.jpg" style="width:30%" height="400px">
+                </div>
+
+            </div>
+            <br>
+
+            <div class="dot1" style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+
+            </div>
+
+            <h3>The Art of Picking Perfect Event Colors: A Palette of Possibilities</h3>
+            <h4>Planning an event can be both thrilling and challenging, with every detail contributing to the overall
+                atmosphere. One crucial aspect that often sets the tone for any gathering is the color scheme. The right
+                blend of colors can transform a mundane event into a memorable experience. Here are some tips to help
+                you navigate the vibrant world of event colors:</h4>
+            <button onclick="toggleReadMore('blogPost3', 'readMoreBtn3', 'readLessBtn3')" id="readMoreBtn3">Read
+                more</button>
+            <button onclick="toggleReadMore('blogPost3', 'readMoreBtn3', 'readLessBtn3')" id="readLessBtn3"
+                style="display:none">Read less</button>
+            <p id="blogPost3" class="blog-content" style="display: none;">
+                1. Understand the Purpose:
+                Before diving into a sea of colors, it's essential to understand the purpose and theme of your event.
+                Whether it&#39;s a corporate conference, a wedding, or a birthday party, each occasion has a unique
+                vibe.
+                Consider the emotions and messages you want to convey through your color choices. <br>
+
+                2. Consider the Venue:
+                The venue plays a significant role in your color decision. Take note of the existing colors in the
+                space—walls, carpets, and fixtures. Harmonize your event colors with the venue to create a seamless
+                and visually appealing atmosphere. <br>
+
+                3. Embrace Trends with Caution:
+                While it&#39;s tempting to follow the latest color trends, be mindful of their longevity. Opt for
+                timeless
+                combinations that won&#39;t look outdated in photos or videos years down the line. If you want to
+                incorporate trends, do so in the details that are easily changeable, like flowers or table settings.
+                <br>
+
+                4. Create a Mood Board:
+                Visual aids can be incredibly helpful in narrowing down your choices. Create a mood board with images,
+                fabrics, and color swatches that inspire you. This will provide a clearer vision and make it easier to
+                communicate your ideas to vendors and collaborators. <br>
+
+                5. Think Beyond Two Colors:
+                Don&#39;t limit yourself to just two main colors. A well-thought-out color palette can consist of three
+                or
+                more colors that complement each other. Consider using a primary color, a secondary color, and an
+                accent color for depth and variety. <br>
+
+                6. Balance Bold and Neutral:
+                If you&#39;re leaning towards bold and vibrant colors, balance them with neutral tones to avoid
+                overwhelming the senses. This is especially important for larger events where too much of one color can
+                be visually exhausting. <br>
+
+                7. Consider Cultural Significance:
+                Colors often carry cultural or symbolic meanings. Be aware of the cultural backgrounds of your guests
+                and the significance certain colors might hold. Ensure that your color choices are respectful and
+                inclusive. <br>
+
+                8. Test with Lighting:
+                The impact of colors can change dramatically with different lighting conditions. Test your color choices
+                in the actual event space with the planned lighting to ensure they create the desired ambiance. <br>
+
+                9. Consult with Professionals:
+                If you&#39;re feeling overwhelmed, consider consulting with a professional event planner or a designer.
+                Their
+                experience and expertise can be invaluable in creating a cohesive and visually stunning color palette.
+                <br>
+
+                10. Have Fun with Accents:
+                Add pops of color through accents like flowers, table settings, or signage. This allows you to
+                experiment
+                with vibrant shades without committing to an entire color scheme. <br> <br>
+
+                Remember, there are no strict rules when it comes to picking event colors. Let your creativity flow, and
+                choose a palette that resonates with the vision you have for your event. After all, the right colors can
+                turn a gathering into an unforgettable experience for everyone involved.
+            </p>
+        </div>
+    </section>
+
+
+
+    <section id="portfolio" class="portfolio-section">
+        <h2>Recent Works</h2>
+        <div class="portfolio-item">
+            <img src="./photos/IMG-20231109-WA0024.jpg" alt="Portfolio Item 1">
+            <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+
+                    <h3> Residential project</h3>
+                    <p>Modern Elegance in the Suburb</p>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="./photos/IMG-20231109-WA0022.jpg" alt="Portfolio Item 2">
+            <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                    <h3>Mothers Day$ Birthday</h3>
+                    <p>Made specially by emeralds interior with the love of color and combination of heart felt feelings
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section id="team" class="team-section">
+        <h2>Meet Our Team</h2>
+        <div class="team-member">
+            <img src="./photos/woman-1353825_1280.png" alt="Team Member 1">
+            <h3>Wanjiku Faith</h3>
+            <p>Event Planner</p>
+        </div>
+        <div class="team-member">
+            <img src="./photos/avatar-312160_1280.png" alt="Team Member 2">
+            <h3>James Karanja</h3>
+            <p>Interior Designer</p>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonial-section">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial">
+            <p>Eventify made our special day truly magical. The attention to detail and professionalism were
+                outstanding. Highly recommended!</p>
+            <p class="client-name">- Sarah Kamau</p>
+        </div>
+
+        <div class="testimonial">
+            <p>Emerald Interiors transformed our office space into a modern and inviting environment. Productivity has
+                soared, and our team loves the new design. It's a pleasure working in such a well-designed space.</p>
+            <p class="client-name">- Catherine L. </p>
+        </div>
+
+        <div class="testimonial">
+            <p>Our cafe has a new lease on life, thanks to Emerald Interiors. They captured the essence of our brand,
+                creating a cozy yet trendy atmosphere. Our customers love the design, and business has never been
+                better.</p>
+            <p class="client-name">- Emily T.</p>
+        </div>
+
+        <div class="testimonial">
+            <p>The design consultation with Emerald Interiors was a collaborative and inspiring experience. They took
+                the time to understand our preferences and lifestyle, resulting in a design that truly feels like 'us.
+            </p>
+            <p class="client-name">- Michael H.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" id = "name" required placeholder="Your Name">
+            <input type="email" id ="email" required placeholder="Your Email">
+            <textarea id ="message" required placeholder="Your Message"></textarea>
+            <input id = "submit" required value="Send message" type="submit"/>
+        </form>
+      
+    </section>
+
+    <section id="newsletter" class="newsletter-section">
+        <div class="newsletter-content">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Stay in the loop with our latest events and design trends. Subscribe now!</p>
+            <div class="newsletter-form">
+                <input type="email" placeholder="Your Email">
+                <button type="submit">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter" class="newsletter-section">
+        <div class="newsletter-content">
+            <!-- <h2>Where we are located</h2> -->
+            <p>Get to know our location</p>
+        
+            <div id="map"></div>
+             
+            <button id="map_button" type="submit">Request Map</button>
+        </div>
+    </section>
+
+
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" class="social-icon">Facebook</a><i class="fa-brands fa-facebook"></i>
+                <a href="#" class="social-icon">Twitter</a><i class="fa-brands fa-twitter"></i>
+                <a href="#" class="social-icon">Instagram</a><i class="fa-brands fa-instagram"></i>
+            </div>
+            <ul class="footer-links">
+                <li><a href="#terms">Terms of Service</a></li>
+                <li><a href="#privacy">Privacy Policy</a></li>
+            </ul>
+
+        </div>
+        <h5> <i class="fa-regular fa-copyright"></i>
+            Created by <span>Daisy Designs</span> | All Rights Reserved </h5>
+    </footer>
+
+
+    <button id="back-to-top" onclick="scrollToTop()">Back to Top</button>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+
+
+    <script>
+        function toggleReadMore(postId, readMoreBtnId, readLessBtnId) {
+            var content = document.getElementById(postId);
+            var readMoreBtn = document.getElementById(readMoreBtnId);
+            var readLessBtn = document.getElementById(readLessBtnId);
+
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                readMoreBtn.style.display = 'none';
+                readLessBtn.style.display = 'block';
+            } else {
+                content.style.display = 'none';
+                readMoreBtn.style.display = 'block';
+                readLessBtn.style.display = 'none';
+            }
+        }
+    </script>
+
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('show');
+        }
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Show/hide back-to-top button based on scroll position
+        window.addEventListener('scroll', function () {
+            const backToTopButton = document.getElementById('back-to-top');
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+    </script>
+
+
+
+
+
+
+
+    <script src="./main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
+
+    <script src="https://kit.fontawesome.com/25ad4c3d5b.js" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shopping Assistance</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">Eventify</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="consultation.html">Consultation</a></li>
+            <!-- <li><a href="furnishings.html">Furnishings</a></li> -->
+            <li><a href="repairs.html">Repairs</a></li>
+            <li class="active"><a href="shopping.html">Shopping Assistance</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </nav>
+
+    <section class="shopping-assistance-section">
+        <h2>Shopping Assistance</h2>
+
+        <!-- Assistance service 1 -->
+
+
+
+
+        <div class="assistance-service">
+            <img src="./photos/avatar-312160_1280.png" alt="Assistance Service 1">
+            <h3>In-Store Shopping</h3>
+            <p class="description">Enjoy a personalized shopping experience with our experts by your side.</p>
+            <button id="bookAssistanceBtn">Book Assistance</button>
+            <p id="confirmationMsg1">Assistance booked successfully. We look forward to assisting you!</p>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var bookAssistanceBtn = document.getElementById('bookAssistanceBtn');
+                var confirmationMessage = document.getElementById('confirmationMsg1');
+
+                bookAssistanceBtn.addEventListener('click', function () {
+                    // Simulate an action (e.g., making an API request)
+                    // In a real scenario, replace this with your actual logic
+
+                    // Display confirmation message
+                    confirmationMessage.style.display = 'block';
+                });
+            });
+        </script>
+
+
+
+
+
+        <div class="assistance-service">
+            <img src="./photos/avatar-1606914_1280.png" alt="Assistance Service 2">
+            <h3>Online Recommendations</h3>
+            <p class="description">Get tailored recommendations for furniture and decor from the comfort of your home.
+            </p>
+            <button id="getRecommendationsBtn">Get Recommendations</button>
+            <p id="confirmationMsg">Recommendations sent! Check your email for personalized suggestions.</p>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var getRecommendationsBtn = document.getElementById('getRecommendationsBtn');
+                var confirmationMessage = document.getElementById('confirmationMsg');
+
+                getRecommendationsBtn.addEventListener('click', function () {
+                    // Simulate an action (e.g., making an API request)
+                    // In a real scenario, replace this with your actual logic
+
+                    // Display confirmation message
+                    confirmationMessage.style.display = 'block';
+
+                    //  add additional logic here, such as making an API request
+                });
+            });
+        </script>
+
+
+    </section>
+
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" class="social-icon">Facebook</a><i class="fa-brands fa-facebook"></i>
+                <a href="#" class="social-icon">Twitter</a><i class="fa-brands fa-twitter"></i>
+                <a href="#" class="social-icon">Instagram</a><i class="fa-brands fa-instagram"></i>
+            </div>
+            <ul class="footer-links">
+                <li><a href="#terms">Terms of Service</a></li>
+                <li><a href="#privacy">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <h5> Created by <span>Daisy Designs</span> | All Rights Reserved </h5>
+
+    </footer>
+    <script src="https://kit.fontawesome.com/25ad4c3d5b.js" crossorigin="anonymous"></script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

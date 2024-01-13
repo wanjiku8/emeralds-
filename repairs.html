@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Repairs</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">Eventify</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="consultation.html">Consultation</a></li>
+            <li><a href="furnishing.html">Furnishings</a></li>
+            <li class="active"><a href="repairs.html">Repairs</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-bars" style="color: #004F47;"></i></div>
+    </nav>
+
+    <section class="repairs-section">
+        <h2>Furniture Repairs</h2>
+
+        <!-- Repair service 1 -->
+        <div class="repair-service">
+            <img src="./photos/mitch-moondae-zXFtsdi9dIc-unsplash.jpg" alt="Repair Service 1">
+            <h3>Chair Refurbishment</h3>
+            <p class="description">Restore the beauty and functionality of your favorite chair.</p>
+            <p class="price">Starting at $50</p>
+            <button id="requestQuoteBtn1">Request Quote</button>
+            <p id="confirmationMessage1">Your request has been received. Thank you!</p>
+
+
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var requestQuoteBtn1 = document.getElementById('requestQuoteBtn1');
+                var confirmationMessage = document.getElementById('confirmationMessage1');
+
+                requestQuoteBtn1.addEventListener('click', function () {
+                    // Display confirmation message
+                    confirmationMessage.style.display = 'block';
+                });
+            });
+        </script>
+
+
+        <!-- Repair service 2 -->
+
+        <div class="repair-service">
+            <img src="./photos/ruslan-bardash-4kTbAMRAHtQ-unsplash.jpg" class="rpimg" alt="Repair Service ">
+            <h3>Table Restoration</h3>
+            <p class="description">Bring life back to your old table with our expert restoration services.</p>
+            <p class="price">Starting at $100</p>
+            <button id="requestQuoteBtn2">Request Quote</button>
+            <p id="confirmationMessage">Your request has been received. Thank you!</p>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var requestQuoteBtn2 = document.getElementById('requestQuoteBtn2');
+                var confirmationMessage = document.getElementById('confirmationMessage');
+
+                requestQuoteBtn2.addEventListener('click', function () {
+
+
+                    // Display confirmation message
+                    confirmationMessage.style.display = 'block';
+                });
+            });
+        </script>
+
+
+
+
+
+
+        <!-- Repair service 3 -->
+
+        <div class="repair-service">
+            <img src="./photos/bedroom-1158264_1280.jpg" class="rpimg" alt="Repair Service ">
+            <h3>Bed Restoration</h3>
+            <p class="description">Bring life back to your old table with our expert restoration services.</p>
+            <p class="price">Starting at $120</p>
+            <button id="requestQuoteBtn">Request Quote</button>
+            <p id="confirmationMessage2">Your request has been received. Thank you!</p>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var requestQuoteBtn = document.getElementById('requestQuoteBtn');
+                var confirmationMessage = document.getElementById('confirmationMessage2');
+
+                requestQuoteBtn.addEventListener('click', function () {
+                    // Display confirmation message
+                    confirmationMessage.style.display = 'block';
+
+                });
+            });
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var requestQuoteBtn = document.getElementById('requestQuoteBtn');
+
+                requestQuoteBtn.addEventListener('click', function () {
+                    // Perform the actual work when the button is clicked
+                    alert('Requesting quote for Bed Restoration. ');
+                    // You can replace the alert with your actual logic, such as opening a form, making an API request, etc.
+                });
+            });
+        </script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var requestQuoteBtn1 = document.getElementById('requestQuoteBtn1');
+
+                requestQuoteBtn1.addEventListener('click', function () {
+                    // Perform the actual work when the button is clicked
+                    alert('Requesting quote for Chair refurbishment. ');
+                    // You can replace the alert with your actual logic, such as opening a form, making an API request, etc.
+                });
+            });
+        </script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var requestQuoteBtn2 = document.getElementById('requestQuoteBtn2');
+
+                requestQuoteBtn2.addEventListener('click', function () {
+                    // Perform the actual work when the button is clicked
+                    alert('Requesting quote for Table Restoration. ');
+                    // You can replace the alert with your actual logic, such as opening a form, making an API request, etc.
+                });
+            });
+        </script>
+
+
+
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" class="social-icon">Facebook</a>
+                <a href="#" class="social-icon">Twitter</a>
+                <a href="#" class="social-icon">Instagram</a>
+            </div>
+            <ul class="footer-links">
+                <li><a href="#terms">Terms of Service</a></li>
+                <li><a href="#privacy">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <h5> Created by <span>Daisy Designs</span> | All Rights Reserved </h5>
+
+    </footer>
+    <script src="https://kit.fontawesome.com/25ad4c3d5b.js" crossorigin="anonymous"></script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

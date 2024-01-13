@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultation</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">Eventify</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="consultation.html">Consultation</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-bars" style="color: #004F47;"></i></div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to Eventify</h1>
+            <p>Your premier event planners for unforgettable experiences.</p>
+
+        </div>
+    </section>
+
+    <section class="consultation-section">
+        <h2>Consultation Services</h2>
+        <p>Transform your space with our expert consultation services. Request a consultation by filling out the form
+            below:</p>
+        <form action="#" method="post" class="consultation-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Your Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="message">Additional Information (optional):</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <button type="submit">Request Consultation</button>
+        </form>
+
+
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" class="social-icon">Facebook</a><i class="fa-brands fa-facebook"></i>
+                <a href="#" class="social-icon">Twitter</a><i class="fa-brands fa-twitter"></i>
+                <a href="#" class="social-icon">Instagram</a><i class="fa-brands fa-instagram"></i>
+            </div>
+            <ul class="footer-links">
+                <li><a href="#terms">Terms of Service</a></li>
+                <li><a href="#privacy">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <h5> <i class="fa-regular fa-copyright"></i>
+            Created by <span>Daisy Designs</span> | All Rights Reserved </h5>
+    </footer>
+    <script src="https://kit.fontawesome.com/25ad4c3d5b.js" crossorigin="anonymous"></script>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
