@@ -9,19 +9,32 @@
 </head>
 
 <body>
-    <nav>
-        <div class="logo">Eventify</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="consultation.html">Consultation</a></li>
-            <li><a href="furnishing.html">Furnishings</a></li>
-            <li class="active"><a href="repairs.html">Repairs</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-bars" style="color: #004F47;"></i></div>
-    </nav>
-
+    <header>
+        <a href="#" class="logo"><img src="./photos/status_me_status_IMG-20240114-WA0006-removebg-preview (1).png" alt=""></a>
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">MENU</label>
+        
+        <nav class="navbar">
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="consultation.html">CONSULTATION</a></li>
+              <li><a href="#services">SERVICES</a>
+              <ul>
+                <li><a href="furnishing.html">Furnishings</a></li>
+                <li><a href="repairs.html">Repairs</a></li>
+                <li><a href="shopping.html">Shopping Assistance</a></li>
+                <li><a href="appliance.html">Appliance Mounting</a></li>
+              </ul>
+              
+              </li>
+              <li><a href="#blog">BLOG</a></li>
+              <li><a href="#contact">CONTACT</a></li>
+        
+            
+            </ul>
+          </nav>
+ 
+        </header>
     <section class="repairs-section">
         <h2>Furniture Repairs</h2>
 
@@ -164,20 +177,52 @@
 
     </section>
 
-    <footer>
-        <div class="footer-content">
-            <div class="social-links">
-                <a href="#" class="social-icon">Facebook</a>
-                <a href="#" class="social-icon">Twitter</a>
-                <a href="#" class="social-icon">Instagram</a>
-            </div>
-            <ul class="footer-links">
-                <li><a href="#terms">Terms of Service</a></li>
-                <li><a href="#privacy">Privacy Policy</a></li>
-            </ul>
+   
+<footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Privacy POlicy</a></li>
+    
+          </ul>
         </div>
-        <h5> Created by <span>Daisy Designs</span> | All Rights Reserved </h5>
-
+    
+        <div class="footer-col">
+          <h4>Get help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Order Status</a></li>
+    
+          </ul>
+        </div>
+    
+        <div class="footer-col">
+          <h4>Online shopping</h4>
+          <ul>
+            <li><a href="#">Furnishings</a></li>
+            <li><a href="#">Repairs</a></li>
+            <li><a href="#">Appliances</a></li>
+    
+          </ul>
+        </div>
+    
+        <div class="footer-col">
+          <h4>Follow us</h4>
+          <div class="social-links">
+    
+                    <a href="#" class="social-icon">Facebook</a><i class="fa-brands fa-facebook"></i>
+                    <a href="#" class="social-icon">Twitter</a><i class="fa-brands fa-twitter"></i>
+                    <a href="#" class="social-icon">Instagram</a><i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+    </div>
     </footer>
     <script src="https://kit.fontawesome.com/25ad4c3d5b.js" crossorigin="anonymous"></script>
 

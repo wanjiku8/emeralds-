@@ -23,14 +23,23 @@ function loadConsultationPage() {
     xhr.send();
 }
 
-function toggleMenu() {
-    const navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('show');
-}
+// function toggleMenu() {
+//     const navLinks = document.querySelector('.nav-links');
+//     navLinks.classList.toggle('show');
+// }
 
-function closeMenu() {
-    const navLinks = document.querySelector('.nav-links');
-    navLinks.classList.remove('show');
+// function closeMenu() {
+//     const navLinks = document.querySelector('.nav-links');
+//     navLinks.classList.remove('show');
+// }
+
+
+
+function toggleMenu() {
+  const menu = document.querySelector(".menu-links");
+  const icon = document.querySelector(".humburger-icon");
+  menu.classList.toggle("open");
+  icon.classList.toggle("open");
 }
 
 
@@ -137,7 +146,7 @@ getMapBtn.onclick = () => {
 }
 }
 
-    function toggleMenu() {
-        var nav = document.querySelector('nav');
-        nav.style.display = (nav.style.display === 'none' || nav.style.display === '') ? 'flex' : 'none';
-    }
+    // function toggleMenu() {
+    //     var nav = document.querySelector('nav');
+    //     nav.style.display = (nav.style.display === 'none' || nav.style.display === '') ? 'flex' : 'none';
+    // }
